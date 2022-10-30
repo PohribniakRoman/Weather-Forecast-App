@@ -1,7 +1,7 @@
 
 echo "clean previous build"
 
-rm -rf dist/
+rm -rf build/
 
 echo "Installing packages"
 
@@ -12,7 +12,7 @@ echo "Prepearing build..."
 
 rm -rf src/
 
-mv dist/* .
+mv build/* .
 
 echo "Deploing..."
 
