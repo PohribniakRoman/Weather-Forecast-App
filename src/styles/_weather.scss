@@ -1,0 +1,60 @@
+.weather{
+    height: 100vh;
+    display: flex;
+    background-color: #eeeeeeee;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    &__main{
+        position: relative;
+        width: 60%;
+        height: 100%;
+        &--subtitle{
+            color: rgb(189, 189, 189);
+            margin-top: -10px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+    &__photo{
+        width: 40%;
+        height: 100%;
+        background: rgb(22, 22, 22);
+        background-size: cover;
+        background-position: center;
+    }
+    &__list{
+        position: relative;
+        width: 100%;
+        &--item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(189, 189, 189);
+            & div{
+                padding: 15px 0;
+                width: 25%; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p{
+                    margin-bottom:0;
+                }
+            }
+        }
+    }
+}
+.inVisible{
+    display: none;
+}
+.swapBtn{
+    position: absolute;
+    right: 30px;
+    margin-top: 20px;
+}
+.time{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}

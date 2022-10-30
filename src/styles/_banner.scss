@@ -1,0 +1,29 @@
+.banner {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    width: 100vw ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    &--main {
+      width: 20%;
+      position: relative;
+      display: flex;
+      justify-content: space-around;  
+      flex-direction: column;
+    }
+
+    &--photo{
+      width: 80%;
+      height: 100%;
+      background-size: cover;
+    }
+  }
+}
