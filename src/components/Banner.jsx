@@ -31,7 +31,7 @@ export default function Banner() {
                     const data = await FetchCity(cityName);
                     if(parseInt(data.cod) === 200){
                         localStorage.setItem("data",JSON.stringify(data))
-                        navigate(`/city/${cityName}`);
+                        navigate(`/wethermap/city/${cityName}`);
                     }else{
                         alert(`We can't find city with name ${cityName}`)
                     }}}>

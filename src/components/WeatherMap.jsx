@@ -50,7 +50,7 @@ export default function WeatherMap() {
                                 <p>{moment(element.dt_txt).format('MMMM Do, h:mm a')}</p>
                             </div>
                             <div className="weather__list--item-header">
-                                <p>{Math.floor(element.main.temp-273)}°C | {Math.floor(element.main.temp)}°F</p>
+                                <p>{Math.floor(element.main.temp-273.5)}°C | {Math.floor((Math.floor(element.main.temp-273.5)*1.8) +32)}°F</p>
                             </div>
                             <div className="weather__list--item-header">
                             <div style={{width:"50px",height:"50px",backgroundSize:"contain",backgroundImage:`url(https://openweathermap.org/img/w/${element.weather[0].icon}.png)`}}></div>
