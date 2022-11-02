@@ -47,7 +47,7 @@ export default function WeatherMap() {
                 {cityData.list.map((element,ind)=>{
                     return <div id={ind} key={element.dt} className={`weather__list--item created ${ind>5?"inVisible":""}`}>
                             <div className="weather__list--item-header">
-                                <p>{moment(element.dt_txt).format('MMMM Do, h:mm a')}</p>
+                                <p>{moment(element.dt_txt).format('lll')}</p>
                             </div>
                             <div className="weather__list--item-header">
                                 <p>{Math.floor(element.main.temp-273.5)}°C | {Math.floor((Math.floor(element.main.temp-273.5)*1.8) +32)}°F</p>
